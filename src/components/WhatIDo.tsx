@@ -83,7 +83,6 @@ const WhatIDo = () => {
                 <div className="what-tags">Financial planning and Analysis</div>
                 <div className="what-tags">MIS and variance analysis</div>
                 <div className="what-tags">Audit coordination and Internal control</div>
-                                <div className="what-tags">Audit coordination and Internal control</div>
 
               </div>
               <div className="what-arrow"></div>

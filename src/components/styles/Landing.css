@@ -85,7 +85,7 @@
   align-items: flex-end;
   justify-content: center;
   width: 100%;
-  max-width: min(380px, 38vw);
+  max-width: min(380px, 80vw);
   pointer-events: none;
 }
 
@@ -260,7 +260,8 @@
 h2.landing-info-h2 {
   color: #14b8a6;
   font-size: 42px;
-  width: 120%;
+  width: 100%;
+  max-width: 100%;
   margin: 0;
   font-family: "Geist", sans-serif;
   font-weight: 600;
@@ -288,6 +289,74 @@ h2.landing-info-h2 {
       rgba(0, 0, 0, 0) 110%);
   top: 0;
   left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .landing-section {
+    height: auto;
+    min-height: var(--vh);
+    padding-bottom: 40px;
+    overflow: hidden;
+  }
+
+  .landing-container {
+    height: auto;
+    min-height: calc(var(--vh) - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    padding-top: 100px;
+    box-sizing: border-box;
+  }
+
+  .landing-intro {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .landing-info {
+    position: relative;
+    right: auto;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .landing-info h2 {
+    flex-wrap: wrap;
+    white-space: normal;
+    margin-left: 0;
+  }
+
+  h2.landing-info-h2 {
+    margin-left: 0;
+  }
+
+  .character-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .character-model {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    height: min(68vh, 520px);
+    max-height: 520px;
+    pointer-events: none;
+  }
+
+  .character-model::after,
+  .character-model::before {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -319,6 +388,31 @@ h2.landing-info-h2 {
 
   h2.landing-info-h2 {
     font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .landing-intro {
+    top: 10%;
+  }
+
+  .landing-info {
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    transform: none;
+    text-align: center;
+  }
+
+  .landing-info h2 {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  h2.landing-info-h2 {
+    font-size: 36px;
   }
 }
 

@@ -127,7 +127,7 @@ export function setCharTimeline(
   } else {
     const tM2 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".what-box-in",
+        trigger: ".whatIDO",
         start: "top 70%",
         end: "bottom top",
       },

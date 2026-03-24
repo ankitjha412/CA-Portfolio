@@ -10,7 +10,7 @@
 .social-icons {
   position: absolute;
   left: -20px;
-  bottom: 20px;
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
   display: none;
   flex-direction: column;
   gap: 8px;
@@ -48,7 +48,7 @@
   z-index: 99;
   display: flex;
   gap: 5px;
-  bottom: 40px;
+  bottom: calc(40px + env(safe-area-inset-bottom, 0px));
   right: 0;
   width: auto;
   text-wrap: nowrap;

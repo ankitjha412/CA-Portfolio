@@ -282,15 +282,20 @@
     padding-bottom: 50px;
   }
   .what-box-in {
+    display: flex;
     min-height: 500px;
-    margin-left: -50px;
+    margin-left: 0px;
   }
   .what-content {
     padding: 50px;
-    width: 500px;
+    width: 100%;
+    max-width: 100%;
   }
   .what-content p {
     font-size: 14px;
+  }
+  .what-border1 svg {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -299,14 +304,14 @@
   }
   .what-box h2 {
     margin: 50px 0;
-    font-size: 55px;
-    line-height: 53px;
+    font-size: clamp(38px, 12vw, 55px);
+    line-height: clamp(36px, 11vw, 53px);
   }
   .what-box:first-child {
     justify-content: left;
   }
   .what-box:last-child {
-    height: 500px;
+    height: auto;
   }
   .what-box {
     width: 500px;

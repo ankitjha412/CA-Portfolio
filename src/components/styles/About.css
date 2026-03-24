@@ -24,9 +24,9 @@
 }
 
 .about-me p {
-  font-size: 33px;
+  font-size: clamp(20px, 5.8vw, 33px);
   font-weight: 600;
-  line-height: 36px;
+  line-height: clamp(26px, 6.6vw, 36px);
   letter-spacing: 1px;
 }
 

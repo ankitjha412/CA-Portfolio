@@ -392,6 +392,29 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .loading-wrap {
+    --Lsize: 120px;
+  }
+
+  .loading-button {
+    padding: 16px 34px;
+    font-size: 16px;
+  }
+
+  .loading-container {
+    left: 34px;
+  }
+
+  .loading-marquee {
+    font-size: clamp(26px, 8vw, 44px);
+  }
+
+  .loaderGame-container {
+    transform: scale(0.32);
+  }
+}
+
 @media only screen and (min-width: 500px) {
   .loading-header {
     padding: 20px 0px;
